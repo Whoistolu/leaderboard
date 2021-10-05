@@ -1,15 +1,36 @@
-import _ from 'lodash';
 import './style.css';
 
+const html = ` <header>
+<h1>Leaderboard</h1>
+</header>
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+<main>
+<section class="recent-scores">
+    <div class="score-refresh">
+        <h2>Recent scores</h2>
+        <button>Refresh</button>
+    </div>
+   
+    <ul class="actual-scores">
+        <li>Name: 100</li>
+        <li>Name: 20</li>
+        <li>Name: 50</li>
+        <li>Name: 78</li>
+        <li>Name: 125</li>
+        <li>Name: 77</li>
+        <li>Name: 42</li>
+    </ul>
+</section>
+
+<section class="form-section">
+    <h2>Add your score</h2>
+    <form action="#">
+        <input type="text" name="name" id="name" placeholder="Your name">
+        <input type="number" name="score" id="score" placeholder="Your score">
+        <input type="submit" value="Submit">
+      </form>
+</section>
+</main>
+`;
+
+document.body.innerHTML = html;
