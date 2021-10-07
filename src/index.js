@@ -46,8 +46,6 @@ const gameIdFromStorage = () => {
   return localStorageID;
 };
 
-gameIdFromStorage();
-
 const saveGameLs = () => {
   const data = {
     name: "my new game",
