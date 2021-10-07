@@ -1,5 +1,5 @@
 import "./style.css";
-import { createGame } from "./api.js";
+import { createGame, createScores } from "./api.js";
 
 const baseURL =
   "https://us-central1-js-capstone-backend.cloudfunctions.net/api/";

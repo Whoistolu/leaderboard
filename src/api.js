@@ -11,15 +11,11 @@ export const createGame = async (url, data) => {
   return response.json();
 };
 
-export const fetchData = () => {
-  // to fix linter;
-};
-
-const createScores = (url, data) => {
+export const createScores = async (url, data) => {
   const response = await fetch(url, {
     method: "POST",
     body: JSON.stringify({
-      user: data.user, 
+      user: data.user,
       score: data.score,
     }),
     headers: {
@@ -27,4 +23,9 @@ const createScores = (url, data) => {
     },
   });
   return response.json();
+};
+
+export const fetchData = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  return response;
 };
