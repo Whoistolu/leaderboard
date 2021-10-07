@@ -25,7 +25,7 @@ export const createScores = async (url, data) => {
   return response.json();
 };
 
-export const fetchData = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+export const fetchScore = async (url) => {
+  const response = await fetch(url);
   return response;
 };
