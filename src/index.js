@@ -37,3 +37,14 @@ const html = ` <header>
 `;
 
 document.body.innerHTML = html;
+const saveGameLs = () => {
+  const data = {
+    name: 'my new game',
+  };
+  window.addEventListener('load', async () => {
+    const { result } = await createGame(`${baseURL}games`, data);
+    const gameID = result.substr(14, 20);
+    localStorage.setItem('ID', JSON.stringify(gameID));
+  });
+};
+saveGameLs();
