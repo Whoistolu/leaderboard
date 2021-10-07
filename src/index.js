@@ -1,7 +1,8 @@
-import './style.css';
-import { createGame } from './api.js';
+import "./style.css";
+import { createGame } from "./api.js";
 
-const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const baseURL =
+  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/";
 
 const html = ` <header>
 <h1>Leaderboard</h1>
@@ -37,14 +38,26 @@ const html = ` <header>
 `;
 
 document.body.innerHTML = html;
+
+const gameIdFromStorage = () => {
+  const localStorageID = localStorage.getItem("ID")
+    ? JSON.parse(localStorage.getItem("ID"))
+    : null;
+  return localStorageID;
+};
+
+gameIdFromStorage();
+
 const saveGameLs = () => {
   const data = {
-    name: 'my new game',
+    name: "my new game",
   };
-  window.addEventListener('load', async () => {
-    const { result } = await createGame(`${baseURL}games`, data);
-    const gameID = result.substr(14, 20);
-    localStorage.setItem('ID', JSON.stringify(gameID));
-  });
+  if (!gameIdFromStorage()) {
+    window.addEventListener("load", async () => {
+      const { result } = await createGame(`${baseURL}games`, data);
+      const gameID = result.substr(14, 20);
+      localStorage.setItem("ID", JSON.stringify(gameID));
+    });
+  }
 };
 saveGameLs();
