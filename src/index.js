@@ -1,4 +1,7 @@
 import './style.css';
+import { createGame } from './api.js';
+
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 const html = ` <header>
 <h1>Leaderboard</h1>
