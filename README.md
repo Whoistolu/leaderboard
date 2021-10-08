@@ -13,6 +13,8 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 - CSS
 - Javascript ES6
 
+[Live Link](https://whoistolu.github.io/leaderboard/dist/)
+
 
 ## To get a local copy run the following steps:
 - Copy this link [this link](https://github.com/Whoistolu/leaderboard)
