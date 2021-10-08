@@ -84,6 +84,7 @@ const getScores = async () => {
   const smallTag2 = document.createElement('small');
   const url = `${baseURL}games/${gameIdFromStorage()}/scores/`;
   const { result } = await fetchScore(url);
+  result.sort((a, b) => b.score - a.score);
   result.forEach((item) => {
     smallTag1.textContent = `${item.user}: `;
     smallTag2.textContent = item.score;
