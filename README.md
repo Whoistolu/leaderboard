@@ -21,9 +21,8 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 - Open the folder with your code editor
 - Create a branch to work on
 - Run `npm run build`
-- Run npm `start` to start the server
+- Run `npm start` to start the server
 - Or open the `index.html` file in the dist directory
-- Now You can edit the code and do a pull request
 
 ## Authors
 
