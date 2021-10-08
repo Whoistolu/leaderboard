@@ -5,23 +5,42 @@
 }
 
 body {
-  background-color: rgb(240, 235, 227);
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
 }
 
 header h1 {
-  margin-top: 2rem;
-  margin-left: 3rem;
+  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+}
+
+.score-refresh h2,
+.form-section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color: #fff;
 }
 
 .score-refresh button {
-  padding: 0.2px 14px;
-  border: 4px solid black;
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: #6b0f1a;
+  font-size: 20px;
+  color: #fff;
 }
 
-ul {
-  list-style-type: none;
+.score-refresh button:hover {
+  background-color: rgb(137, 108, 141);
 }
 
 ul li {
@@ -29,18 +48,28 @@ ul li {
   padding: 8px;
 }
 
+.actual-scores li {
+  background-color: #fff;
+  color: #6b0f1a;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .actual-scores {
-  border: 2px solid black;
+  border: 6px solid #6b0f1a;
+  border-radius: 5px;
 }
 
 .actual-scores li:nth-child(even) {
-  background-color: rgb(110, 104, 104);
+  background-color: rgb(189, 169, 186);
 }
 
 main {
   display: flex;
   gap: 8rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   width: fit-content;
 }
 
@@ -58,13 +87,23 @@ form {
 
 input[type=text],
 input[type=number] {
+  margin-top: 2rem;
   padding: 6px;
-  border: 4px solid black;
+  border: 4px solid #fff;
+  font-size: 20px;
+  background-color: rgb(90, 43, 88);
 }
 
 input[type=submit] {
   width: min-content;
   margin-left: auto;
   padding: 3px 14px;
-  border: 4px solid black;
+  border-radius: 5px;
+  color: rgb(3, 1, 1);
+  font-size: 14px;
+}
+
+input[type=submit]:hover {
+  background-color: #6b0f1a;
+  color: #fff;
 }

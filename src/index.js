@@ -4,13 +4,13 @@ import { createGame, createScores, fetchScore } from './api.js';
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 const html = ` <header>
-<h1>Leaderboard</h1>
+<h1>LEADERBOARD</h1>
 </header>
 
 <main>
 <section class="recent-scores">
     <div class="score-refresh">
-        <h2>Recent scores</h2>
+        <h2>RECENT SCORES</h2>
         <button id="refresh">Refresh</button>
     </div>
    
@@ -19,7 +19,7 @@ const html = ` <header>
 </section>
 
 <section class="form-section">
-    <h2>Add your score</h2>
+    <h2>ADD YOUR SCORE</h2>
     <form action="#">
         <input type="text" name="name" id="name" placeholder="Your name">
         <input type="number" name="score" id="score" placeholder="Your score">
