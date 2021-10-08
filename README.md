@@ -22,7 +22,7 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 - Create a branch to work on
 - Run `npm run build`
 - Run `npm start` to start the server
-- Or open the `index.html` file in the dist directory
+- Or open the `index.html` file in the dist directory with liveserver
 
 ## Authors
 
