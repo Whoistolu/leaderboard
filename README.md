@@ -5,7 +5,7 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](img/api.png)
+![screenshot](img/main.png)
 
 ## Built With
 
